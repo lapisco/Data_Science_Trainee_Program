@@ -1,6 +1,9 @@
+data/
+
 .vscode/
 
 Module_2/feature_extraction/feature_extraction_signal/
+Module_2/feature_extraction/feature_selection_framework/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

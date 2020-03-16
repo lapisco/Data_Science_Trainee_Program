@@ -62,6 +62,8 @@ py==1.8.1
 Pygments==2.5.2
 pylint==2.4.4
 pyparsing==2.4.6
+PyQt5==5.14.1
+PyQt5-sip==12.7.1
 pyrsistent==0.15.7
 pytest==5.3.2
 pytest-pylint==0.14.1

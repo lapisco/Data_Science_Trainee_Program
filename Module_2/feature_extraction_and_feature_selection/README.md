@@ -1,5 +1,14 @@
 Feature Extraction and Feature Selection
 ===
+
+# Materials
+
+Link to video class here:
+
+
+
+Download the presentation here: https://drive.google.com/open?id=1wctFgQe7TSlBEypZbVQqqsfrnpSgOeXPSO-mCJ6jIz4
+
 Use the `requirements.txt` to create a enviroment and activate it using:
 
 ```shell

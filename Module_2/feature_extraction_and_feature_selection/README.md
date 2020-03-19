@@ -16,6 +16,13 @@ virtualenv -p python3.6 .env
 source .env/bin/activate
 ```
 
+Install dependencies:
+
+```shell
+pip install -r requirements.txt
+```
+
+
 Create a Jupyter kernel using `IPykernel` as:
 
 ```shell

@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+    app:
+        # NodeJs rules
+        container_name: lapisco_hw_app
+        command: "node src/index.js"
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports: 
+            - 3000:3000
+        environment: 
+            - MYSQL_HOST=mysql
+            - MYSQL_USER=root
+            - MYSQL_PASSWORD=secret
+            - MYSQL_DB=todos
+        volumes: 
+            - $PWD:/app
+
+        depends_on: 
+            - mysql
+
+        restart: always
+            
+    mysql:
+        container_name: lapisco_hw_mysql
+        image: mysql:5.7
+        volumes:
+            - todo-mysql-data:/var/lib/mysql
+        environment: 
+            MYSQL_ROOT_PASSWORD: secret
+            MYSQL_DATABASE: todos
+        
+        restart: always
+
+volumes: 
+    todo-mysql-data:

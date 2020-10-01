@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+    api:
+        # Flask rules
+        container_name: lapico_trainee_api_iris
+        command: "flask run -h 0.0.0.0 --port $PORT"
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports: 
+            - 5000:$PORT
+        env_file: .env
+        restart: always
+

@@ -9,7 +9,7 @@ joblib==0.16.0
 lazy-object-proxy==1.4.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
-numpy==1.18.2
+numpy==1.22.0
 pandas==1.0.3
 pylint==2.4.4
 pyproj==2.6.0
